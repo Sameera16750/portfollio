@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root {
+  --base-dark: #0F0F0F;
+  --base-white:#ffff;
+  --base-gray: #323232;
+  --base-transparent: transparent;
+  --bas-bg-card-pattern: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+
+  /*fonts*/
+}
+
+* {
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-bg {
+  background: var(--bas-bg-card-pattern);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
