@@ -5,11 +5,24 @@ ul{
   transform: translate(50%,50%);
 }
 
+.social-icon{
+  border-radius: 50%;
+}
+
+.social-icon:hover .social-icon-img{
+  filter: none;
+}
 @keyframes marquee {
   0% {
     transform: translate(0,0);
   }
   100%{
     transform: translate(-100%,0);
+  }
+}
+
+@media (max-width: 990px) {
+  .social-section{
+    border-radius: 30px;
   }
 }
