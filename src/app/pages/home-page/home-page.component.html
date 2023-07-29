@@ -1,1 +1,77 @@
-<p>home-page works!</p>
+<div class="container py-3 md:py-10 flex flex-col gap-6 px-5 md:px-0">
+  <!--  top row-->
+  <div class="flex gap-6 justify-center flex-col md:flex-row ">
+    <!--    about crd area-->
+    <div class="md:w-1/2 aspect-[2/1] animated-crd p-[2rem] flex justify-center items-center cursor-pointer">
+      <div class="flex relative flex-col md:flex-row">
+        <div class="md:w-1/2 p-[1rem]">
+          <img src="assets/images/dp.jpg" alt="dp" class="rounded-tl-[35px] rounded-br-[35px]">
+        </div>
+        <div class="md:w-1/2 text-[var(--base-body-font-color)] flex justify-center font-medium flex-col p-2 gap-4">
+          <p class="uppercase">A Fullstack Developer</p>
+          <h1 class="text-4xl text-[var(--base-white)]">Sameera Madhushan</h1>
+          <p class="font-normal mb-3">I am a fullstack software engineer based on Kandy </p>
+        </div>
+        <img src="assets/icons/card-menu-icon.svg" alt="icon" class="absolute right-0 bottom-0 card-icon">
+      </div>
+    </div>
+    <!--    end about crd area-->
+    <div class="md:w-1/2 aspect-[2/1] gap-6 flex flex-col">
+      <!--      animated list-->
+      <div class="animated-crd p-4 overflow-hidden">
+        <ul
+          class="inline-flex text-[14px] gap-8 list-[circle] overflow-hidden text-[var(--base-body-font-color)]">
+          <li *ngFor="let i of [1,2,3,4,5,6,7,8,9]" class="uppercase">latest work and
+            <span class="text-[var(--base-white)]">featured</span>
+          </li>
+        </ul>
+      </div>
+      <!--      end animated list-->
+      <div class="flex gap-6 flex-col md:flex-row">
+        <!--        more about section-->
+        <div class="md:w-1/2 aspect-[1] animated-crd p-8 flex flex-col justify-center items-center gap-8">
+          <img src="assets/images/newdarksign.png" class="filter-white aspect-[7/6] w-1/2 " alt="sign">
+          <div class="flex flex-col items-start w-full relative">
+            <p class="uppercase text-[var(--base-body-font-color)] text-[14px]">More About Me</p>
+            <p class="text-[var(--base-white)] text-2xl">Credentials</p>
+            <img src="assets/icons/card-menu-icon.svg" alt="icon" class="absolute right-0 bottom-0 card-icon">
+          </div>
+        </div>
+        <!--        end more about section-->
+        <!--        projects section-->
+        <div class="md:w-1/2 aspect-[1] animated-crd p-8 flex flex-col justify-center items-center h-full gap-8">
+          <img src="assets/images/my-works.png" class="aspect-[14/6] w-full mt-2" alt="sign">
+          <div class="flex flex-col items-start w-full relative">
+            <p class="uppercase text-[var(--base-body-font-color)] text-[14px]">Show case</p>
+            <p class="text-[var(--base-white)] text-2xl">Projects</p>
+            <img src="assets/icons/card-menu-icon.svg" alt="icon" class="absolute right-0 bottom-0 card-icon">
+          </div>
+        </div>
+        <!--        end project section-->
+      </div>
+    </div>
+  </div>
+  <!--  end top row-->
+  <!--  second row-->
+  <div class="flex gap-6 flex-col md:flex-row">
+    <!--    blog section-->
+    <div class="md:w-[25%] aspect-[1] animated-crd p-8 flex flex-col justify-center items-center">
+      <img src="assets/images/gfonts.png" class="aspect-[125/95] w-full " alt="sign">
+      <div class="flex flex-col items-start w-full relative">
+        <p class="uppercase text-[var(--base-body-font-color)] text-[14px]">Blog</p>
+        <p class="text-[var(--base-white)] text-2xl">GFonts</p>
+        <img src="assets/icons/card-menu-icon.svg" alt="icon" class="absolute right-0 bottom-0 card-icon">
+      </div>
+    </div>
+    <!--    end blog section-->
+    <!--    offering section-->
+    <div class="md:w-[50%] aspect-[2/1] animated-crd p-8 flex flex-col justify-center items-center"></div>
+    <div class="md:w-[25%] aspect-[1] animated-crd p-8 flex flex-col justify-center items-center"></div>
+    <!--    end of offering section-->
+  </div>
+  <!--  end second row-->
+  <div class="flex gap-6 flex-col md:flex-row">
+    <div class="md:w-[50%] aspect-[2/1] animated-crd p-8 flex flex-col justify-center items-center"></div>
+    <div class="md:w-[50%] aspect-[2/1] animated-crd p-8 flex flex-col justify-center items-center"></div>
+  </div>
+</div>
