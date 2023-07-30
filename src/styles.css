@@ -8,6 +8,7 @@
   --base-dark: #0F0F0F;
   --base-white: #ffff;
   --base-gray: #323232;
+  --base-blue: #5B78F6;
   --base-transparent: transparent;
   --bas-bg-card-pattern: linear-gradient(120deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
 
@@ -15,7 +16,7 @@
   --base-body-font-color: #676767;
 
   /*filter colors*/
-  --filter-white:invert(100%) sepia(98%) saturate(0%) hue-rotate(154deg) brightness(109%) contrast(100%);
+  --filter-white: invert(100%) sepia(98%) saturate(0%) hue-rotate(154deg) brightness(109%) contrast(100%);
 }
 
 * {
@@ -23,10 +24,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@layer utilities{
+@layer utilities {
 
-  .filter-white{
-    filter:var(--filter-white)
+  .filter-white {
+    filter: var(--filter-white)
   }
 }
 
@@ -78,7 +79,7 @@
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   transform: scale(0);
-  border-radius: 35px;
+  border-radius: 30px;
   box-shadow: rgba(256, 256, 256, 0.1) 0px 0px 1px 0px, rgba(256, 256, 256, 0.1) 0px 0px 3px 0px;
 }
 

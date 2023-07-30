@@ -9,9 +9,6 @@ ul{
   border-radius: 50%;
 }
 
-.social-icon:hover .social-icon-img{
-  filter: none;
-}
 @keyframes marquee {
   0% {
     transform: translate(0,0);
