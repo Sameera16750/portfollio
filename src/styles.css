@@ -74,13 +74,15 @@
 /*common classes*/
 .animated-crd {
   background: var(--bas-bg-card-pattern);
+  transform: scale(0);
+  border-radius: 30px;
+  box-shadow: rgba(256, 256, 256, 0.1) 0px 0px 1px 0px, rgba(256, 256, 256, 0.1) 0px 0px 3px 0px;
+}
+.card-animation{
   animation-name: load-card;
   animation-duration: 700ms;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  transform: scale(0);
-  border-radius: 30px;
-  box-shadow: rgba(256, 256, 256, 0.1) 0px 0px 1px 0px, rgba(256, 256, 256, 0.1) 0px 0px 3px 0px;
 }
 
 .animated-crd:hover .card-icon {
