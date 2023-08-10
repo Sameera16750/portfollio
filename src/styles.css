@@ -8,6 +8,7 @@
   --base-dark: #0F0F0F;
   --base-white: #ffff;
   --base-gray: #323232;
+  --base-low-gray: #BCBCBC;
   --base-blue: #5B78F6;
   --base-transparent: transparent;
   --bas-bg-card-pattern: linear-gradient(120deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
@@ -18,6 +19,18 @@
   /*filter colors*/
   --filter-white: invert(100%) sepia(98%) saturate(0%) hue-rotate(154deg) brightness(109%) contrast(100%);
 }
+
+/* Change the scrollbar track color */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+/* Change the scrollbar thumb color (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 2px;
+}
+
 
 * {
   background-color: transparent;
@@ -76,7 +89,7 @@
   background: var(--bas-bg-card-pattern);
   transform: scale(0);
   border-radius: 30px;
-  box-shadow: rgba(256, 256, 256, 0.1) 0px 0px 1px 0px, rgba(256, 256, 256, 0.1) 0px 0px 3px 0px;
+  box-shadow: rgba(256, 256, 256, 0.1) 0 0 1px 0, rgba(256, 256, 256, 0.1) 0 0 3px 0;
 }
 .card-animation{
   animation-name: load-card;
