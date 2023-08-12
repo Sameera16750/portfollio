@@ -91,7 +91,8 @@
   border-radius: 30px;
   box-shadow: rgba(256, 256, 256, 0.1) 0 0 1px 0, rgba(256, 256, 256, 0.1) 0 0 3px 0;
 }
-.card-animation{
+
+.card-animation {
   animation-name: load-card;
   animation-duration: 700ms;
   animation-timing-function: ease-in;
@@ -104,6 +105,35 @@
 
 .card-icon {
   opacity: 0.5;
+}
+
+.social-icon {
+  border-radius: 50%;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.animated-section{
+  transform: scale(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translate(50%, 100%); /* Adjust as needed */
+  animation: fadeInFromBottomRightAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFromBottomRightAnimation {
+  from {
+    opacity: 0;
+    transform: translate(50%, 30%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes load-card {

@@ -8,5 +8,9 @@ export const routes: Routes = [
   {
     path: 'about',
     loadComponent: () => import('./pages/about-page/about-page.component').then(mod => mod.AboutPageComponent)
-  }
+  },
+  {
+    path: 'credentials',
+    loadComponent: () => import('./pages/credintials/credintials.component').then(mod => mod.CredintialsComponent)
+  },
 ];

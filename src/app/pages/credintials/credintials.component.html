@@ -1,0 +1,86 @@
+<div class="flex flex-col md:flex-row gap-16 w-full">
+  <!--  side card-->
+  <div class="w-full md:w-[40%] ">
+    <div class="animated-crd w-full aspect-[2/3] p-8 flex flex-col items-center gap-8">
+      <img src="assets/images/dp.jpg" alt="dp" class="w-full aspect-[1]  rounded-[30px]">
+      <div class="flex flex-col items-center">
+        <p class="text-2xl md:text-3xl"><span class="text-[var(--base-blue)]">S</span>ameera Madhushan</p>
+        <p class="text-lg opacity-[0.6] text-[var(--base-low-gray)]">@sameeramadushan</p>
+      </div>
+      <div class="flex flex-row w-full gap-4 justify-center">
+        <div
+          class="animated-crd w-[50px] aspect-[1] flex justify-center items-center hover:bg-[var(--base-blue)] social-icon">
+          <img src="assets/icons/linkedin.png" alt="icon" class="w-[20px] aspect-[1] filter-white social-icon-img">
+        </div>
+        <div
+          class="animated-crd w-[50px] aspect-[1] flex justify-center items-center  hover:bg-[var(--base-blue)] social-icon">
+          <img src="assets/icons/facebook.png" alt="icon" class="w-[20px] aspect-[1] filter-white social-icon-img">
+        </div>
+        <div
+          class="animated-crd w-[50px] aspect-[1] flex justify-center items-center hover:bg-[var(--base-blue)] social-icon">
+          <img src="assets/icons/instagram.png" alt="icon" class="w-[20px] aspect-[1] filter-white social-icon-img">
+        </div>
+        <div
+          class="animated-crd w-[50px] aspect-[1] flex justify-center items-center  hover:bg-[var(--base-blue)] social-icon">
+          <img src="assets/icons/twitter.png" alt="icon" class="w-[20px] aspect-[1] filter-white social-icon-img">
+        </div>
+      </div>
+      <a
+        class="bg-[var(--base-gray)] w-full flex p-2 justify-center rounded-[15px] hover:text-[var(--base-dark)] hover:bg-[var(--base-white)]">
+        <label class="text-xl">Contact Me</label>
+      </a>
+    </div>
+  </div>
+  <!--  end side card-->
+  <!--  content area-->
+  <div class="w-full md:w-[75%] md:h-[95vh] md:overflow-scroll flex flex-col gap-16 " id="scrollContainer">
+    <!--    about me section-->
+    <div class="flex flex-col gap-8 animated-section">
+      <h2 class="uppercase font-medium text-xl">about me</h2>
+      <p class="opacity-[0.7]">Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
+        dolor purus non enim
+        praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim
+        diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.
+      </p>
+      <p class="opacity-[0.7]">
+        Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet luctussd fav venenatis, lectus magna fringilla
+        zac urna, porttitor rhoncus dolor purus non enim praesent cuz elementum sahas facilisis leot.</p>
+    </div>
+    <!--    end about me section-->
+    <!--    experience section-->
+    <div class="flex flex-col gap-10 animated-section">
+      <h2 class="uppercase font-medium text-xl">experience</h2>
+      <div class="flex flex-col gap-1" *ngFor="let i of experiences">
+        <label class="text-lg opacity-[0.6] text-[var(--base-low-gray)]">{{i.yearRange}}</label>
+        <label class="text-lg text-[var(--base-blue)]">{{i.title}}</label>
+        <label class="text-[14px] opacity-[0.6] text-[var(--base-low-gray)]">{{i.company}}</label>
+        <p class="opacity-[0.7] mt-3">{{i.desc}}</p>
+      </div>
+    </div>
+    <!--    end Experience section-->
+    <!--    education section-->
+    <div class="flex flex-col gap-10 animated-section ">
+      <h2 class="uppercase font-medium text-xl">education</h2>
+      <div class="flex flex-col gap-1" *ngFor="let i of studies">
+        <label class="text-lg opacity-[0.6] text-[var(--base-low-gray)]">{{i.yearRange}}</label>
+        <label class="text-lg text-[var(--base-blue)]">{{i.title}}</label>
+        <label class="text-[14px] opacity-[0.6] text-[var(--base-low-gray)]">{{i.company}}</label>
+        <p class="opacity-[0.7] mt-3">{{i.desc}}</p>
+      </div>
+    </div>
+    <!--    end education section-->
+    <!--     skills section-->
+    <div class="flex flex-col gap-10 animated-section">
+      <h2 class="uppercase font-medium text-xl">Skills</h2>
+      <div class="flex w-full flex-wrap gap-y-10">
+        <div class="w-full md:w-1/2 flex flex-col gap-1" *ngFor="let i of skills">
+          <label class="text-[14px] opacity-[0.6] text-[var(--base-low-gray)]">{{i.percentage}}</label>
+          <label class="text-lg opacity-[0.7]">{{i.name}}</label>
+          <label class="text-[14px] opacity-[0.6] text-[var(--base-low-gray)]">{{i.desc}}</label>
+        </div>
+      </div>
+    </div>
+    <!--     end skills section-->
+  </div>
+  <!--  end content area-->
+</div>
