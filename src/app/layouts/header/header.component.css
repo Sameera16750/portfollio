@@ -45,3 +45,7 @@
 .header-main ul {
   clip-path: inset(0 -100vmax);
 }
+
+.links.active{
+  color: white!important;
+}

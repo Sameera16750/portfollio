@@ -11,8 +11,8 @@
             md:bg-transparent"
         [class]="isNaviOpenInMobile?
         'h-[250px] absolute top-[60px] w-[calc(100%-2rem)] ':''">
-      <li class="text-white cursor-pointer">Home</li>
-      <li class="hover:text-white cursor-pointer" *ngFor="let i of ['About','Work','Contact']">{{i}}</li>
+      <li class="hover:text-white cursor-pointer links" (click)="navigat(i)" [class.active]="activeUrl===i"
+          *ngFor="let i of ['Home','About','Services','Contact']">{{i}}</li>
     </ul>
     <a class="hidden md:block text-lg bg-baseGray flex items-center justify-center py-2 px-8 rounded-[16px]">
       Let's talks
